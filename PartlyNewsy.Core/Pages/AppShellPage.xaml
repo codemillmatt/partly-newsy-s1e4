@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Shell
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:PartlyNewsy.Core"
+    x:Class="PartlyNewsy.Core.AppShellPage"
+    Shell.TabBarTitleColor="Red">
+
+    <TabBar>
+        <Tab Title="News" Shell.NavBarIsVisible="False">
+            <Tab.Icon>
+                <FontImageSource FontFamily="{StaticResource FabMDL2}" Glyph="&#xE900;" />
+            </Tab.Icon>
+            <ShellContent Title="Top News">
+                <local:NewsCollectionPage />
+            </ShellContent>            
+        </Tab>
+        <Tab Title="Settings">
+            <Tab.Icon>
+                <FontImageSource FontFamily="{StaticResource FabMDL2}" Glyph="&#xE713;"/>
+            </Tab.Icon>
+            <ShellContent>
+                <local:SettingsPage />
+            </ShellContent>
+        </Tab>
+    </TabBar>
+
+</Shell>
