@@ -1,2 +1,7 @@
-# partly-newsy-s1e4
-final cut for episode 4 on auth
+# Partly Cloudy: Episode 4 - Who Are You? (Auth)
+
+Hold On Tight!!
+
+The full readme is coming soon - probably the week of 11-NOV-2019.
+
+Until then ... 
