@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
-using Microsoft.AppCenter.Auth;
+
 
 namespace PartlyNewsy.Core
 {
@@ -10,31 +10,11 @@ namespace PartlyNewsy.Core
 
         public async Task<bool> Login()
         {
-            try
-            {
-                var user = await Auth.SignInAsync();
-
-                AccessToken = user.AccessToken;
-            }
-            catch (Exception)
-            {
-                return false;
-            }
-
-            return true;
+            return await Task.FromResult(true);
         }
 
         public bool Logout()
-        {
-            try
-            {
-                Auth.SignOut();
-            }
-            catch (Exception)
-            {
-                return false;
-            }
-
+        {            
             return true;
         }
     }

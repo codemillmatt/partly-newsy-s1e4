@@ -7,14 +7,20 @@
     Shell.TabBarTitleColor="Red">
 
     <TabBar>
-        <Tab Title="News" Shell.NavBarIsVisible="False">
+        <Tab Title="News" Shell.NavBarIsVisible="True">
             <Tab.Icon>
                 <FontImageSource FontFamily="{StaticResource FabMDL2}" Glyph="&#xE900;" />
             </Tab.Icon>
             <ShellContent Title="Top News">
                 <local:NewsCollectionPage />
-            </ShellContent>            
-        </Tab>
+            </ShellContent>
+            <ShellContent Title="US News">
+                <local:NewsCollectionPage />
+            </ShellContent>
+            <ShellContent Title="World News">
+                <local:NewsCollectionPage />
+            </ShellContent>
+        </Tab>        
         <Tab Title="Settings">
             <Tab.Icon>
                 <FontImageSource FontFamily="{StaticResource FabMDL2}" Glyph="&#xE713;"/>

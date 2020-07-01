@@ -17,6 +17,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PartlyNewsy.Models\PartlyNewsy.Models.csproj" />
+    <ProjectReference Include="..\PartlyNewsy.Models\PartlyNewsy.Models.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
   </ItemGroup>
 </Project>
