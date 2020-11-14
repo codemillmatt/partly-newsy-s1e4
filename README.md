@@ -4,7 +4,7 @@ Welcome back to Partly Cloudy! The show where you learn how to build a cloud-con
 
 In this episode we add something that every app needs - but it's sometimes tricky to do ... add authentication!!
 
-[Check out the show](https://channel9.msdn.com/Shows/Partly-Cloudy/Who-Are-You-App-Center-Auth?WT.mc_id=partlycloudy-github-masoucou) - then come on back to get a recap on what happened and some extra pointers on some stuff I had to gloss over.  (Or if you need to catch up - [all the episodes are here](https://channel9.msdn.com/Shows/Partly-Cloudy?WT.mc_id=partlycloudy-github-masoucou)!)
+[Check out the show](https://channel9.msdn.com/Shows/Partly-Cloudy/Who-Are-You-App-Center-Auth?WT.mc_id=mobile-0000-masoucou) - then come on back to get a recap on what happened and some extra pointers on some stuff I had to gloss over.  (Or if you need to catch up - [all the episodes are here](https://channel9.msdn.com/Shows/Partly-Cloudy?WT.mc_id=mobile-0000-masoucou)!)
 
 ## Authentication
 
@@ -14,13 +14,13 @@ So how do we do this?
 
 ### App Center
 
-That's right, we use [App Center](https://docs.microsoft.com/appcenter/auth/?WT.mc_id=partlycloudy-github-masoucou) to allow users to create accounts and sign-in to the application! Actually, App Center provides a nice wrapper around [Azure AD B2C](https://docs.microsoft.com/azure/active-directory-b2c/?WT.mc_id=partlycloudy-github-masoucou) and [MSAL](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki). It's B2C that holds the user store and all that goodness. And MSAL is the SDK that interacts with B2C and handles all lowdown OAuth stuff.
+That's right, we use [App Center](https://docs.microsoft.com/appcenter/auth/?WT.mc_id=mobile-0000-masoucou) to allow users to create accounts and sign-in to the application! Actually, App Center provides a nice wrapper around [Azure AD B2C](https://docs.microsoft.com/azure/active-directory-b2c/?WT.mc_id=mobile-0000-masoucou) and [MSAL](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki). It's B2C that holds the user store and all that goodness. And MSAL is the SDK that interacts with B2C and handles all lowdown OAuth stuff.
 
 But App Center wraps them in a super duper easy to use SDK.
 
 ### Authenticating Users
 
-I won't reiterate how to set everything up - rather I'll point you to the [documentation](https://docs.microsoft.com/appcenter/sdk/auth/xamarin?WT.mc_id=partlycloudy-github-masoucou). It's thorough. It's correct. It's kept up to date.
+I won't reiterate how to set everything up - rather I'll point you to the [documentation](https://docs.microsoft.com/appcenter/sdk/auth/xamarin?WT.mc_id=mobile-0000-masoucou). It's thorough. It's correct. It's kept up to date.
 
 Once you have everything setup for Azure AD B2C, connected it to App Center, [added the NuGet](https://www.nuget.org/packages/Microsoft.AppCenter.Auth/), and then initialized in your `info.plist` and `AndroidManifest.xml` you're ready to do some coding.
 
